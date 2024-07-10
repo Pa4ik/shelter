@@ -1,0 +1,110 @@
+/* шрифты */
+
+/* Arial Black */
+@font-face {
+    font-family: 'Arial Black';
+    src: url('/shelter/src/fonts/arial/arial-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Arial Bold Italic */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Arial Bold */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Arial Italic */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Arial Narrow Bold Italic */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Arial Narrow Bold */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Arial Narrow Italic */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Arial Narrow Regular */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Arial Regular */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Arial', Arial, sans-serif; */
+/* font-family: 'Arial Narrow', Arial, sans-serif; */
+
+/* Georgia Bold Italic */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Georgia Bold */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Georgia Italic */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Georgia Regular */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Georgia', sans-serif; */

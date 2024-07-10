@@ -1,0 +1,230 @@
+/* шрифты */
+
+/* Arial Black */
+@font-face {
+    font-family: 'Arial Black';
+    src: url('/shelter/src/fonts/arial/arial-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Arial Bold Italic */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Arial Bold */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Arial Italic */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Arial Narrow Bold Italic */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Arial Narrow Bold */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Arial Narrow Italic */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Arial Narrow Regular */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('/shelter/src/fonts/arial/arial-narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Arial Regular */
+@font-face {
+    font-family: 'Arial';
+    src: url('/shelter/src/fonts/arial/arial-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Arial', Arial, sans-serif; */
+/* font-family: 'Arial Narrow', Arial, sans-serif; */
+
+/* Georgia Bold Italic */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Georgia Bold */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Georgia Italic */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Georgia Regular */
+@font-face {
+    font-family: 'Georgia';
+    src: url('/shelter/src/fonts/georgia/georgia-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Georgia', sans-serif; */
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+.header{
+    background: url(/shelter/src/img/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+    /* background:radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%); */
+}
+
+.header__start_screen{
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.head{
+    display: flex;
+    padding: 11px 40px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: grid;
+    gap: 10px;
+}
+
+.title__logo{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #F1CDB3;
+    font-family: 'Georgia', sans-serif;
+}
+
+.down__logo{
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 14.95px;
+   letter-spacing: 0.1em;
+   text-align: left;
+   color: #FFFFFF;
+   margin-left: 4px;
+}
+
+.nav_list{
+    display: flex;
+    gap: 36px;
+}
+
+.nav__list_item{
+    color: #CDCDCD;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* start__screen */
+
+.start__screen{
+    display: flex;
+    padding: 78px 40px 0px;
+    gap: 42px;
+    flex-wrap: wrap;
+}
+
+.start_scr{
+    padding-top: 164px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.h2{
+    max-width: 310px;
+    color: #FFFFFF;
+    font-family: Georgia, sans-serif;;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+    text-align: left;
+}
+
+.text__about{
+   max-width: 460px;
+   font-family: Arial;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: left;
+   color: #CDCDCD;
+}
+
+.btn{
+    width:207px;
+    height:52px;
+    padding-left: 45px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
