@@ -196,7 +196,7 @@ a{
 .h2{
     max-width: 310px;
     color: #FFFFFF;
-    font-family: Georgia, sans-serif;;
+    font-family: Georgia, sans-serif;
     font-size: 44px;
     font-weight: 400;
     line-height: 57.2px;
@@ -228,3 +228,48 @@ a{
     border: none;
     cursor: pointer;
 }
+
+/* about */
+
+.about{
+    background: #FFFFFF;
+}
+
+.about__content{
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.about__content_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 117px;
+}
+
+.content{
+    display: grid;
+    gap: 24px;
+}
+
+.h3{
+    font-family: Georgia ,sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    max-width: 370px;
+}
+
+.about__content__text{
+    margin: 0px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    max-width: 430px;
+}
+
