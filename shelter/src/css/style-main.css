@@ -109,6 +109,10 @@
 
 /* font-family: 'Georgia', sans-serif; */
 
+html{
+    scroll-behavior: smooth;
+}
+
 li{
     list-style: none;
     text-decoration: none;
@@ -282,7 +286,7 @@ a{
 
 /* pets */
 
-.pets{
+.our__friends{
     background: #F6F6F6;
 }
 
@@ -590,4 +594,39 @@ a{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+/* hover element */
+
+
+.nav__item{
+    padding-bottom: 2px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s; 
+    transition: 1s;
+}
+
+.nav__list_item{
+    transition: 1s;
+}
+
+.nav__list_item:hover{
+   color: #FAFAFA;
+}
+
+.nav__item:hover{
+color: #F1CDB3;
+background-size: 100% 3px; 
+}
+
+.active__nav_list{
+    color: #FAFAFA;
+}
+
+.active__nav_item{
+    color: #F1CDB3;
+    background-size: 100% 3px; 
 }

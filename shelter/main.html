@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/css/style-main.css" rel="stylesheet">
     <link href="./src/css/normalize.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" href="./src/img/about-pets.png">
+    <title>Cozy House</title>
 </head>
 <body class="body">
     <header class="header">
         <div class="header__start_screen">
             <div class="head">
-                <a class="logo">
+                <a class="logo"href="#" onclick="return false;">
                     <h1 class="title__logo">Cozy House</h1>
                     <span class="down__logo">Shelter for pets in Boston</span>
                 </a>
                 <nav>
                     <ul class="nav_list">
-                        <li class="nav__item"><a class="nav__list_item" href="">About the shelter</a></li>
-                        <li><a class="nav__list_item" href="">Our pets</a></li>
-                        <li><a class="nav__list_item" href="">Help the shelter</a></li>
-                        <li><a class="nav__list_item" href="">Contacts</a></li>
+                        <li class="nav__item active__nav_item" ><a class="nav__list_item" href="#"  onclick="return false;">About the shelter</a></li>
+                        <li class="nav__item"><a class="nav__list_item" href="./pets.html">Our pets</a></li>
+                        <li class="nav__item"><a class="nav__list_item" href="#help">Help the shelter</a></li>
+                        <li class="nav__item"><a class="nav__list_item" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,7 +29,7 @@
                 <div class="start_scr">
                     <h2 class="h2">Not only people need a house</h1>
                     <p class="text__about">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <button class="btn">Make a friend</button>
+                    <a href="#our__friends"><button class="btn" >Make a friend</button></a>
                 </div>
                 <img class="img" src="src/img/start-screen-puppy.png" alt="start pets">
             </div>
@@ -47,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <section class="pets">
+        <section class="our__friends" id="our__friends">
             <div class="pets__content">
                 <div class="pets__content_box">
                     <h3 class="h3__pets">Our friends who
@@ -107,11 +108,11 @@
                                 </svg> 
                         </button>
                     </div>
-                    <a class="btn__primary">Get to know the rest</a>
+                    <a class="btn__primary" href="./pets.html">Get to know the rest</a>
                 </div>
             </div>
         </section>
-        <section class="help">
+        <section class="help" id="help">
             <div class="help__content">
                 <div class="help__content_box">
                     <h3 class="help__content_h3">How you can help
@@ -169,17 +170,17 @@
                             <br>
                              make a donation</h3>
                         <p class="dontation__content_info_bank">Name of the bank / Type of bank account</p>
-                        <div class="dontation__content_number_card">
+                        <a href="#"  onclick="return false;"><div class="dontation__content_number_card">
                             <img src="./src/icon/credit-card.svg" alt="credit card">
                             <h4 class="dontation__content_h4">8380 2880 8028 8791 7435</span>
-                        </div>
+                        </div></a> 
                         <p class="dontation__content_legal_info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="footer__box">
             <div class="footer__contetn">
                 <div class="footer__contetn__item">
