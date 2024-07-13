@@ -235,6 +235,7 @@ a{
     text-align: left;
     border: none;
     cursor: pointer;
+    transition: 1s;
 }
 
 /* about */
@@ -325,7 +326,8 @@ a{
     padding: 21px 17px;
     border-radius: 100px ;
     border: 2px;
-    border: 2px solid #F1CDB3
+    border: 2px solid #F1CDB3;
+    transition: 1s;
 }
 
 .slider{
@@ -368,7 +370,9 @@ a{
     padding: 13px 43px;
     border-radius: 100px;
     border: 2px 0px 0px 0px;  
-    background: #FAFAFA; 
+    background: #FAFAFA;
+    transition: 1s; 
+    cursor: pointer;
 }
 
 .btn__primary{
@@ -386,7 +390,8 @@ a{
     border-radius: 100px;
     border: none;
     display: table;
-    margin: auto;     
+    margin: auto; 
+    transition: 1s;    
 }
 
 /* help */
@@ -500,6 +505,7 @@ a{
     background: #F1CDB3;
     display: flex;
     gap: 15px;
+    transition: 1s;
 }
 
 .dontation__content_h4{
@@ -556,7 +562,7 @@ a{
 .footer__contetn__list{
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 38px;
 }
 
 .footer__contetn__item_location{
@@ -570,7 +576,7 @@ a{
 .footer__contetn__list_location{
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 28px;
 }
 
 .footer__contetn_h3{
@@ -594,6 +600,7 @@ a{
     display: flex;
     align-items: center;
     gap: 20px;
+    transition: 1s;
 }
 
 /* hover element */
@@ -609,12 +616,27 @@ a{
     transition: 1s;
 }
 
+.footer__item{
+    padding-bottom: 5px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s; 
+    transition: 1s;
+} 
+
 .nav__list_item{
     transition: 1s;
 }
 
 .nav__list_item:hover{
    color: #FAFAFA;
+}
+
+.footer__item:hover{
+    color: #F1CDB3;
+    background-size: 100% 3px; 
 }
 
 .nav__item:hover{
@@ -629,4 +651,25 @@ background-size: 100% 3px;
 .active__nav_item{
     color: #F1CDB3;
     background-size: 100% 3px; 
+}
+
+.btn:hover,
+.btn__primary:hover,
+
+.dontation__content_number_card:hover{
+    background: #FDDCC4;
+}
+
+.slider__btn:hover{
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;;
+}
+
+.footer__contetn_link:hover{
+    color: #FAFAFA; 
+}
+
+.btn__slider:hover{
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
 }
