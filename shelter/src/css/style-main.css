@@ -293,7 +293,7 @@ a{
 
 .pets__content_box{
     display: flex;
-    padding:80px 40px 100px;
+    padding:80px 40px 101px;
     flex-direction: column;
     gap: 59px;
 }
@@ -393,11 +393,11 @@ a{
 }
 
 .help__content_box{
-    padding: 80px 40px 100px;
+    padding: 81px 40px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 58px;
     
 }
 
@@ -457,7 +457,7 @@ a{
 }
 
 .dontation__content_box{
-    padding: 80px 182px 100px 183px;
+    padding: 80px 182px 89px 183px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -517,6 +517,11 @@ a{
     line-height: 18px;
     text-align: left;
     color: #B2B2B2;    
+    margin-top: 16px;
+}
+
+.dontation__content_img{
+    margin-top: -5px;
 }
 
 /* footer */
