@@ -551,6 +551,9 @@ a{
 .footer__box{
     max-width: 1280px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__contetn{
@@ -558,13 +561,14 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 168px;
 }
 
 .footer__contetn__item{
     padding-top: 17px;
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 25px;
 }
 
 .footer__contetn__list{
@@ -610,6 +614,10 @@ a{
     gap: 20px;
     transition:  0.7s;
 }
+
+ .footer__img{
+    padding: 40px 40px 0px 40px;
+ }
 
 /* hover element */
 
@@ -685,4 +693,116 @@ background-size: 100% 3px;
 .slider__item:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+}
+
+/* media */
+
+@media (max-width:1279px){
+    .start__screen{
+        gap:0px;
+    }
+
+    .dontation__content_box {
+        padding: 80px 0px 89px 150px;
+    }
+}
+
+@media (max-width:1237px){
+    .start__screen{
+        justify-content: center;
+        gap:40px;
+    }
+    .start_scr{
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:1064px){
+    .dontation__content_box {
+        justify-content: center;
+    }
+
+    .dontation__content_img{
+        order: 2;
+    }
+}
+
+@media (max-width:849px){
+    .about__content__img{
+      order:2 ;
+    }
+
+    .help__content_list {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        column-gap: 65px;
+        row-gap: 56px;
+}
+}
+
+@media (max-width:768px){
+    .head {
+        padding: 11px 30px 12px 30px;
+    }
+
+    .start__screen {
+        display: flex;
+        padding: 29px 40px 0px;
+        gap: 105px;
+    }
+
+    .btn__link {
+        margin: auto;;
+    }
+
+    .start__screen__img{
+        padding-left: 133px;
+        max-width: 82%;
+    }
+
+    .about__content_box {
+        gap: 81px;
+    }
+
+    .pets__content_box {
+        padding: 80px 30px 99px;
+    }
+
+    .slider {
+        gap: 13px;
+    }
+
+    .pets__slider {
+        gap: 0px;
+    }
+
+    .slider__item{
+        margin-left: 12px;
+    }
+  
+    .help__content_box {
+        padding-bottom: 98px;
+    }
+    
+    .dontation__content_box{
+        padding: 82px 0px 94px 0px;
+        gap:54px;
+    }  
+
+    .footer__contetn {
+        padding: 14px 64px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 60px;
+        row-gap: 3px;
+    }
+
+  .footer__contetn__item_location{
+    margin: 0px;
+  }
+
+  .footer__img{
+    padding-left: 170px;
+  }
 }
