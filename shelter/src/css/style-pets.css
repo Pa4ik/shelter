@@ -266,8 +266,7 @@ a{
     text-align: left;
     border: 2px solid #F1CDB3;;
     padding: 13px 43px;
-    border-radius: 100px;
-    border: 2px 0px 0px 0px;  
+    border-radius: 100px;  
     background: #FAFAFA;
     transition:  0.7s; 
     cursor: pointer;

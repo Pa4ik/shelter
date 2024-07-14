@@ -222,7 +222,7 @@ a{
 }
 
 .btn{
-    width:207px;
+    width:162px;
     height:52px;
     padding-left: 45px;
     border-radius: 100px;
@@ -236,6 +236,8 @@ a{
     border: none;
     cursor: pointer;
     transition: 0.7s;
+    display: flex;
+    align-items: center;
 }
 
 /* about */
@@ -284,6 +286,10 @@ a{
     line-height: 24px;
     text-align: left;
     max-width: 430px;
+}
+
+.btn__link{
+    color: #292929;
 }
 
 /* pets */
@@ -373,8 +379,7 @@ a{
     text-align: left;
     border: 2px solid #F1CDB3;;
     padding: 13px 43px;
-    border-radius: 100px;
-    border: 2px 0px 0px 0px;  
+    border-radius: 100px; 
     background: #FAFAFA;
     transition:  0.7s; 
     cursor: pointer;
@@ -389,8 +394,6 @@ a{
     letter-spacing: 0.06em;
     text-align: left;
     background: #F1CDB3;
-    width: Hug (261px)px;
-    height: Hug (52px)px;
     padding: 15px 45px 15px 45px;
     border-radius: 100px;
     border: none;
