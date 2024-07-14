@@ -235,7 +235,7 @@ a{
     text-align: left;
     border: none;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.7s;
 }
 
 /* about */
@@ -256,6 +256,7 @@ a{
     align-items: center;
     justify-content: center;
     gap: 120px;
+    flex-wrap: wrap;
 }
 
 .content{
@@ -298,9 +299,9 @@ a{
 
 .pets__content_box{
     display: flex;
-    padding:80px 40px 101px;
+    padding:80px 40px 99px;
     flex-direction: column;
-    gap: 59px;
+    gap: 45px;
 }
 
 .h3__pets{
@@ -318,7 +319,7 @@ a{
 .pets__slider{
     display: flex;
     align-items: center;
-    gap: 53px;
+    gap: 37px;
 }
 
 .btn__slider{
@@ -327,25 +328,28 @@ a{
     border-radius: 100px ;
     border: 2px;
     border: 2px solid #F1CDB3;
-    transition: 1s;
+    transition:  0.7s;
+    cursor: pointer;
 }
 
 .slider{
     display: flex;
     overflow: hidden;
     width: 100%;
-    gap: 90px;
+    gap: 61px;
 }
 
 
 .slider__item{
     width: 270px;
     gap: 30px;
-    border-radius: 9px 0px 0px 0px;
+    border-radius: 9px;
     display: grid;
     justify-items: center;
     background: #FAFAFA;
     padding-bottom:30px;
+    margin: 15px;
+    transition:  0.7s;
 }
 
 .slider__span{
@@ -371,7 +375,7 @@ a{
     border-radius: 100px;
     border: 2px 0px 0px 0px;  
     background: #FAFAFA;
-    transition: 1s; 
+    transition:  0.7s; 
     cursor: pointer;
 }
 
@@ -391,7 +395,7 @@ a{
     border: none;
     display: table;
     margin: auto; 
-    transition: 1s;    
+    transition:  0.7s;    
 }
 
 /* help */
@@ -505,7 +509,7 @@ a{
     background: #F1CDB3;
     display: flex;
     gap: 15px;
-    transition: 1s;
+    transition:  0.7s;
 }
 
 .dontation__content_h4{
@@ -600,7 +604,7 @@ a{
     display: flex;
     align-items: center;
     gap: 20px;
-    transition: 1s;
+    transition:  0.7s;
 }
 
 /* hover element */
@@ -613,7 +617,7 @@ a{
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .4s; 
-    transition: 1s;
+    transition:  0.7s;
 }
 
 .footer__item{
@@ -623,11 +627,11 @@ a{
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .4s; 
-    transition: 1s;
+    transition:  0.7s;
 } 
 
 .nav__list_item{
-    transition: 1s;
+    transition:  0.7s;
 }
 
 .nav__list_item:hover{
@@ -655,14 +659,8 @@ background-size: 100% 3px;
 
 .btn:hover,
 .btn__primary:hover,
-
 .dontation__content_number_card:hover{
     background: #FDDCC4;
-}
-
-.slider__btn:hover{
-    background: #FDDCC4;
-    border: 2px solid #FDDCC4;;
 }
 
 .footer__contetn_link:hover{
@@ -670,6 +668,16 @@ background-size: 100% 3px;
 }
 
 .btn__slider:hover{
+    background-color: #FDDCC4;
+    border: 2px solid #fDDCC4;
+}
+
+.slider__item:hover .slider__btn {
     background: #FDDCC4;
     border: 2px solid #FDDCC4;
+}
+
+.slider__item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
