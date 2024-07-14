@@ -330,6 +330,7 @@ a{
     border: 2px solid #F1CDB3;
     transition:  0.7s;
     cursor: pointer;
+    background-color: #F6F6F6;
 }
 
 .slider{
@@ -650,6 +651,7 @@ background-size: 100% 3px;
 
 .active__nav_list{
     color: #FAFAFA;
+    cursor: default;
 }
 
 .active__nav_item{
