@@ -193,7 +193,6 @@ a{
     margin-right: 20px;
     margin-left: 20px;
     cursor: pointer;
-    background-color: #FFFFFF;
     border: none;
     cursor: pointer;
    }
@@ -201,7 +200,7 @@ a{
    .burger__line{
     display: block;                  
     width: 30px;                                               
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid  #F1CDB3;
     padding: 4px 0px;
 } 
 
@@ -210,7 +209,7 @@ a{
     display: block;          
     width: 30px;                 
     content: '';                                
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #F1CDB3;
     padding: 4px 0px;      
    }
 
@@ -218,7 +217,7 @@ a{
     display: block;          
     width: 30px;                 
     content: '';                                
-    border-bottom: 2px solid #000000;      
+    border-bottom: 2px solid #F1CDB3;      
     padding: 0px 0px;
    }
 
@@ -872,37 +871,233 @@ background-size: 100% 3px;
     .footer__img{
         padding-left: 0px;
       }
+
+      .start__screen__img {
+        padding-left: 133px;
+    }
+
+    .h2{
+        padding: 0px 25px;
+        font-family: Georgia;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        
+    }
+
+    .text__about{
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center; 
+    }
+
+    .help__content_h3{
+        font-family: Georgia;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .help__content_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
  }
 
 
  @media (max-width: 440px) {
     .nav__burger{
         height: 0px;
-        margin-right: 11px;
+        margin-right: 5px;
         margin-left: 0px;
-        margin-bottom: 40px;
+        margin-bottom: 41px;
     }
    .head{
     gap: 58px;
     padding: 11px 0px 0px 20px;
    }
+ 
+    .start__screen {
+        padding: 40px 7px 0px;
+        gap: 107px;
+    }
 
+    .start__screen__img {
+        padding-left: 41px;
+        max-width: 85%;
+    }
 
-   .pets__pegionation {
-    gap: 10px;
-    padding-top: 0px;
-}
+    .about__content{
+        padding-top: 42px;
+        padding-bottom: 44px;
+    }
+
+    .about__content_box {
+        gap: 40px;
+    }
+
+    .content{
+        padding-left: 15px;
+        padding-right: 14px;
+        gap: 23.5px;
+    }
+
+    .h3{
+        font-family: Georgia;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+     .about__content__text{
+        padding-left: 10px;
+        padding-right: 12px;
+        text-align: justify;
+     }
+     
+    .about__content__img {
+        width: 81%;
+    }
+
+    
+
 .h3__pets{
-    line-height: 31.5px;
+    font-family: Georgia;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 .pets__content_box {
-    padding: 54px 0px 41px;
-    gap: 28px;
+    padding: 41px 0px 42px;
+    gap: 26px;
 }
+
+.pets__slider {
+    row-gap: 5px;
+    column-gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.slider {
+    padding-left: 13px;
+}
+
+.btn__slider{
+    order: 1;
+}
+
+.help__content_box {
+    padding: 42px 40px 42px;
+    gap:41px;
+}
+
+.help__content_img {
+    width: 50px;
+    height: 50px;
+}
+
+.help__content_list {
+    padding-left: 8px;
+    column-gap: 44px;
+    row-gap: 29.5px;
+}
+
+.help__content_item {
+    gap: 21px;
+}
+
+.help__content_h4{
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.dontation__content_h3{
+    font-family: Georgia;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center; 
+}
+
+.dontation__content_info_bank{
+    padding-left: 23px;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+.dontation__content_h4{
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    
+}
+
+.dontation__content_box {
+    padding: 41px 0px 42px 0px;
+    gap: 35px;
+}
+
+.dontation__content__content {
+    gap: 5px;
+}
+
+.btn__donation{
+    padding-left: 19px;
+}
+
+.dontation__content_number_card {
+    max-width: 281px;
+    padding: 10px 0px 10px 0px;
+
+    align-items: center;
+}
+
+.donation__img{
+    padding-left: 15px;
+}
+
+.dontation__content_legal_info {
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.donation__dog{
+    width: 81%;
+}
+
+.dontation__content_img{
+    display: flex;
+    justify-content: center;
+}
+
    .footer__contetn{
     padding: 0;
-    gap: 2px;
+    gap: 1px;
    }
    .footer__img {
     width: 81%;
@@ -947,4 +1142,4 @@ background-size: 100% 3px;
     gap: 35px;
 }
 
-   } 
+}
