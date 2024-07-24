@@ -16,7 +16,7 @@
                     <h1 class="title__logo">Cozy House</h1>
                     <span class="down__logo">Shelter for pets in Boston</span>
                 </a>
-                <nav>
+                <nav class="navigation">
                     <ul class="nav_list">
                         <li class="nav__item active__nav_item" ><a class="nav__list_item active__nav_list" href="#"  onclick="return false;">About the shelter</a></li>
                         <li class="nav__item"><a class="nav__list_item" href="./pets.html">Our pets</a></li>
@@ -24,6 +24,9 @@
                         <li class="nav__item"><a class="nav__list_item" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
+                <div class="nav__burger">
+                    <span class="burger__line"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -43,7 +46,7 @@
         <section class="about">
             <div class="about__content">
                 <div class="about__content_box">
-                    <img class="img" src="src/img/about-pets.png" alt="about pets">
+                    <img  class="img about__content__img" src="src/img/about-pets.png" alt="about pets">
                     <div class="content">
                         <h3 class="h3">About the shelter “Cozy House”</h3>
                         <p class="about__content__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
@@ -167,15 +170,15 @@
             <div class="dontation__content">
                 <div class="dontation__content_box">
                     <div class="dontation__content_img">
-                        <img class="img" src="./src/img/donation-dog.png" alt="donation dog">
+                        <img class="img donation__dog" src="./src/img/donation-dog.png" alt="donation dog">
                     </div>
                     <div class="dontation__content__content">
                         <h3 class="dontation__content_h3">You can also
                             <br>
                              make a donation</h3>
                         <p class="dontation__content_info_bank">Name of the bank / Type of bank account</p>
-                        <a href="#"  onclick="return false;"><div class="dontation__content_number_card">
-                            <img src="./src/icon/credit-card.svg" alt="credit card">
+                        <a class="btn__donation" href="#"  onclick="return false;"><div class="dontation__content_number_card">
+                            <img class="donation__img" src="./src/icon/credit-card.svg" alt="credit card">
                             <h4 class="dontation__content_h4">8380 2880 8028 8791 7435</h4>
                         </div></a> 
                         <p class="dontation__content_legal_info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -189,16 +192,16 @@
             <div class="footer__contetn">
                 <div class="footer__contetn__item">
                     <h3 class="footer__contetn_h3">For questions
-                        <br>
+                        <br class="footer__br">
                         and suggestions</h3>
                     <ul class="footer__contetn__list">
                         <li class="footer__item"><a class="footer__contetn_link" href="mailto:email@shelter.com"><img src="./src/icon/mail.png" alt="email">email@shelter.com</a></li>
-                        <li class="footer__item"><a class="footer__contetn_link" href="tel:+136745677554"><img src="./src/icon/phone.png" alt="phone">+13 674 567 75 54</a></li>
+                        <li class="footer__item footer__number"><a class="footer__contetn_link" href="tel:+136745677554"><img src="./src/icon/phone.png" alt="phone">+13 674 567 75 54</a></li>
                     </ul>
                 </div>
                 <div class="footer__contetn__item_location">
-                    <h3 class="footer__contetn_h3">We are waiting 
-                        <br>
+                    <h3 class="footer__contetn_h3 footer__contetn_h3_pading">We are waiting 
+                        <br class="footer__br">
                         for your visit</h3>
                     <ul class="footer__contetn__list_location">
                         <li class="footer__item"><a class="footer__contetn_link" href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.3585559,-71.0573012,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.358552!4d-71.0547263?entry=ttu" target="_blank"><img src="./src/icon/pin.png" alt="pin">1 Central Street, Boston 
@@ -207,7 +210,7 @@
                         <li class="footer__item"><a class="footer__contetn_link" href="https://www.google.com/maps/search/18+south+park+london/@51.4675212,-0.1955214,16z?entry=ttu" target="_blank"><img src="./src/icon/pin.png" alt="pin">18 South Park, London</a></li>
                     </ul>
                 </div>
-                <img class="img" src="./src/img/footer-puppy.png" alt="footer puppy">
+                <img class="img footer__img" src="./src/img/footer-puppy.png" alt="footer puppy">
             </div>
         </div>
     </footer>
