@@ -127,20 +127,13 @@ a{
     height: auto;
 }
 
-body{
+/* header */
+
+.header{
     background: url(/shelter/src/img/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }
 
-/* header */
-
 .header__start_screen{
-    max-width: 1280px;
-    margin: auto;
-    padding-top: 20px;
-}
-
-
-.not__only__start_screen{
     max-width: 1280px;
     margin: auto;
     padding-top: 20px;
@@ -459,10 +452,6 @@ body{
 }
 
 /* help */
-
-.help{
-    background: #FFFFFF;
-}
 
 .help__content{
     max-width: 1280px;
