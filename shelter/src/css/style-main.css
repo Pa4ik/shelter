@@ -127,16 +127,22 @@ a{
     height: auto;
 }
 
-/* header */
-
-.header{
+body{
     background: url(/shelter/src/img/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }
+
+/* header */
+
 
 .header__start_screen{
     max-width: 1280px;
     margin: auto;
     padding-top: 20px;
+}
+
+.not__only__start_screen{
+    max-width: 1280px;
+    margin: auto;
 }
 
 .head{
@@ -452,6 +458,10 @@ a{
 }
 
 /* help */
+
+.help{
+    background: #FFFFFF;
+}
 
 .help__content{
     max-width: 1280px;
@@ -787,6 +797,10 @@ background-size: 100% 3px;
         column-gap: 65px;
         row-gap: 56px;
 }
+  .not__only_img{
+    padding-left: 132px;
+    max-width: 82%;
+  }
 }
 
 @media (max-width:768px){
@@ -908,6 +922,15 @@ background-size: 100% 3px;
         grid-template-columns: repeat(2, 1fr);
     }
  }
+
+
+@media (max-width:570px){
+    .not__only_img{
+        padding-left: 35px;
+        max-width: 85%;
+    
+    }
+}
 
 
  @media (max-width: 440px) {
