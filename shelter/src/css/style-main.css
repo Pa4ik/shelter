@@ -675,7 +675,6 @@ body{
 
 .nav__item{
     padding-bottom: 2px;
-    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -685,7 +684,6 @@ body{
 
 .footer__item{
     padding-bottom: 5px;
-    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -718,7 +716,8 @@ background-size: 100% 3px;
 
 .active__nav_item{
     color: #F1CDB3;
-    background-size: 100% 3px; 
+    background-size: 100% 3px;
+    background-image: linear-gradient(currentColor, currentColor); 
 }
 
 .btn:hover,
