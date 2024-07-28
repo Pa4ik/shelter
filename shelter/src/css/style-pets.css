@@ -347,6 +347,7 @@ a{
 
 .number{
     padding: 12px 19px;
+    cursor: default;
 }
 
 .right{
@@ -432,7 +433,6 @@ a{
 
 .nav__item{
     padding-bottom: 2px;
-    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -442,7 +442,6 @@ a{
 
 .footer__item{
     padding-bottom: 5px;
-    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -474,6 +473,7 @@ background-size: 100% 3px;
 }
 
 .active__nav_item{
+    background-image: linear-gradient(currentColor, currentColor);
     color: #F1CDB3;
     background-size: 100% 3px; 
 }
@@ -512,6 +512,6 @@ background-size: 100% 3px;
     background-color: #F6F6F6;
     color: #CDCDCD;
     border: 2px solid #CDCDCD;
-    cursor: default;
+    cursor: not-allowed;
 }
 
