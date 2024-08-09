@@ -128,7 +128,7 @@ a{
 }
 
 body{
-    background: url(./img/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+    background: url(../img/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }
 
 /* header */
@@ -225,6 +225,19 @@ body{
     content: '';                                
     border-bottom: 2px solid #F1CDB3;      
     padding: 0px 0px;
+   }
+
+   @media (max-width: 767px){
+    .nav__burger{
+        display:block;
+        width: 45px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    .navigation{
+        display: none;
+    }
    }
 
 /* start__screen */
@@ -754,6 +767,14 @@ background-size: 100% 3px;
     .start_scr{
         padding-top: 20px;
     }
+
+    .slider{
+        justify-content: center;
+    }
+
+    .slider__item:nth-last-child(-n+6) { 
+        display: none;
+      }
 }
 
 @media (max-width:1064px){
@@ -862,6 +883,10 @@ background-size: 100% 3px;
     .footer__contetn{
         justify-content: center;
     }
+    .slider__item:nth-last-child(-n+7) { 
+        display: none;
+      }
+    
  }
 
 
