@@ -227,19 +227,6 @@ body{
     padding: 0px 0px;
    }
 
-   @media (max-width: 767px){
-    .nav__burger{
-        display:block;
-        width: 45px;
-        height: 20px;
-        flex-shrink: 0;
-    }
-
-    .navigation{
-        display: none;
-    }
-   }
-
 /* start__screen */
 
 .start__screen{
@@ -716,6 +703,7 @@ background-size: 100% 3px;
 
 .active__nav_item{
     color: #F1CDB3;
+
     background-size: 100% 3px;
     background-image: linear-gradient(currentColor, currentColor); 
 }
@@ -744,6 +732,7 @@ background-size: 100% 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
+
 
 /* media */
 
@@ -1165,3 +1154,4 @@ background-size: 100% 3px;
 }
 
 }
+
