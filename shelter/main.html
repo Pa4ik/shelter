@@ -16,17 +16,19 @@
                     <h1 class="title__logo">Cozy House</h1>
                     <span class="down__logo">Shelter for pets in Boston</span>
                 </a>
-                <nav class="navigation">
-                    <ul class="nav_list">
-                        <li class="nav__item active__nav_item" ><a class="nav__list_item active__nav_list" href="#"  onclick="return false;">About the shelter</a></li>
-                        <li class="nav__item"><a class="nav__list_item" href="./pets.html">Our pets</a></li>
-                        <li class="nav__item"><a class="nav__list_item" href="#help">Help the shelter</a></li>
-                        <li class="nav__item"><a class="nav__list_item" href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-                <div class="nav__burger">
-                    <span class="burger__line"></span>
+                <div class="background__rear">
+                    <nav class="navigation" data-nav>
+                        <ul class="nav_list">
+                            <li class="nav__item active__nav_item" ><a class="nav__list_item active__nav_list" href="#"  onclick="return false;">About the shelter</a></li>
+                            <li class="nav__item"><a class="nav__list_item" href="./pets.html">Our pets</a></li>
+                            <li class="nav__item"><a class="nav__list_item" href="#help">Help the shelter</a></li>
+                            <li class="nav__item"><a class="nav__list_item" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                <button class="nav__burger" data-burger>
+                    <span class="burger__line"></span>
+                </button>
             </div>
         </div>
     </header>
@@ -215,4 +217,5 @@
         </div>
     </footer>
 </body>
+<script src="./src/js/main.js"></script>
 </html>

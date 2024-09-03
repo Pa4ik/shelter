@@ -234,10 +234,6 @@ body{
         height: 20px;
         flex-shrink: 0;
     }
-
-    .navigation{
-        display: none;
-    }
    }
 
 /* start__screen */
@@ -1180,3 +1176,106 @@ background-size: 100% 3px;
 
 }
 
+/* burger-menu */
+
+.hidden-overflow{
+    overflow: hidden;
+}
+
+@media (max-width: 767px){
+    
+    @keyframes burher-hide {
+        0% {
+  
+           transform: translateX(0%);
+        }
+        50%{
+           transform: translateX(100%);
+           display: none;
+        }
+        100% {
+           transform: translateY(-300%);
+           display: none;
+        }
+      }
+   
+
+    @keyframes burher-active {
+        0% {
+           transform: translateY(-300%);
+           display: none;
+        }
+        50%{
+           transform: translateX(100%);
+           display: none;
+        }
+        100% {
+           transform: translateX(0%);
+        }
+      }
+    .hidden-overflow{
+        overflow: hidden;
+    }
+
+    .head {
+        padding: 11px 0px 12px 30px;
+    }
+
+    .background__rear_active{
+        background: #29292999;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+ 
+    .navigation{
+        display: block;
+        position: absolute;
+        top: -16px;
+        right: 0px;
+        animation: burher-hide 0.3s forwards;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav__burger{
+        z-index: 5;
+        margin-right: 6px;
+        transition: transform 0.3s;
+        background-color: rgba(0, 125, 215, 0);
+    }
+
+    .nav_list{
+        width: 320px;
+        height: 100vh;
+        background-color: #292929;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        gap: 39px;
+    }
+
+    .nav__list_item{
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51.2px;
+    text-align: left;
+    }
+
+    .burger--active{
+        transform: rotate(90deg);
+        transition: transform 0.3s;
+        margin-right: 12px;
+       }
+
+       .navigation-visibl {
+        animation: burher-active 0.3s forwards;
+        z-index: 3;
+    
+    }
+
+
+   }
