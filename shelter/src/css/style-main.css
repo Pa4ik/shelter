@@ -231,7 +231,7 @@ body{
     .nav__burger{
         display:block;
         width: 45px;
-        height: 20px;
+        height: 23px;
         flex-shrink: 0;
     }
    }
@@ -944,13 +944,12 @@ background-size: 100% 3px;
 
  @media (max-width: 440px) {
     .nav__burger{
-        height: 0px;
+
         margin-right: 5px;
         margin-left: 0px;
-        margin-bottom: 41px;
+        
     }
    .head{
-    gap: 58px;
     padding: 11px 0px 0px 20px;
    }
  
@@ -1211,6 +1210,7 @@ background-size: 100% 3px;
         }
         100% {
            transform: translateX(0%);
+    overflow: hidden;
         }
       }
     .hidden-overflow{
@@ -1218,7 +1218,7 @@ background-size: 100% 3px;
     }
 
     .head {
-        padding: 11px 0px 12px 30px;
+        padding: 11px 0px 0px 20px;
     }
 
     .background__rear_active{
@@ -1228,6 +1228,7 @@ background-size: 100% 3px;
         width: 100%;
         height: 100%;
         left: 0;
+    overflow: hidden;
     }
  
     .navigation{
@@ -1241,9 +1242,10 @@ background-size: 100% 3px;
 
     .nav__burger{
         z-index: 5;
-        margin-right: 6px;
+        margin-right: 10px;
         transition: transform 0.3s;
         background-color: rgba(0, 125, 215, 0);
+        
     }
 
     .nav_list{
@@ -1255,6 +1257,7 @@ background-size: 100% 3px;
         align-items: center;
         align-content: center;
         gap: 39px;
+
     }
 
     .nav__list_item{
@@ -1276,6 +1279,4 @@ background-size: 100% 3px;
         z-index: 3;
     
     }
-
-
    }
