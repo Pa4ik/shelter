@@ -12,7 +12,7 @@
   },
   {
     "name": "Sophia",
-    "img": "../shelter/src/img/sophia.png",
+    "img": "../shelter/src/img/pets-Sophia.png",
     "type": "Dog",
     "breed": "Shih tzu",
     "description": "Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Scarlett",
-    "img": "../shelter/src/img/pets-scarlett.png",
+    "img": "../shelter/src/img/pets-scarlet.png",
     "type": "Dog",
     "breed": "Jack Russell Terrier",
     "description": "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
