@@ -768,9 +768,9 @@ background-size: 100% 3px;
         justify-content: center;
     }
 
-    .slider__item:nth-last-child(-n+6) { 
+    /* .slider__item:nth-last-child(-n+6) { 
         display: none;
-      }
+      } */
 }
 
 @media (max-width:1064px){
@@ -879,10 +879,10 @@ background-size: 100% 3px;
     .footer__contetn{
         justify-content: center;
     }
-    .slider__item:nth-last-child(-n+7) { 
+    /* .slider__item:nth-last-child(-n+7) { 
         display: none;
       }
-    
+     */
  }
 
 
@@ -1470,7 +1470,7 @@ background-size: 100% 3px;
    @media (max-width: 735px){
     .modal__window_pets_info{
         max-width: 550px;
-        height: 330px;
+        height: max-content;
        }
 
     .modal__info {
@@ -1553,3 +1553,5 @@ background-size: 100% 3px;
         background-color: rgba(0, 125, 215, 0);
     }
    }
+
+  
