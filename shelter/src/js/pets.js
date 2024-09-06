@@ -95,6 +95,183 @@ window.addEventListener('click', (event) => {
   }
 });
 
+
+
+
+// страницы 
+const itemOne = '<div class="slider__item item item_1"> <img src="src/img/pets-jennifer.png" alt="pets Jennifer"><span class="slider__span">Jennifer</span><button class="slider__btn">Learn more</button></div>';
+const itemTwo = '<div class="slider__item item item_2"><img src="src/img/pets-Sophia.png" alt="pets Sophia"><span class="slider__span">Sophia</span><button class="slider__btn">Learn more</button></div>';
+const itemThree = '<div class="slider__item item item_3"><img src="src/img/pets-woody.png" alt="pets Woody"><span class="slider__span">Woody</span><button class="slider__btn">Learn more</button></div>';
+const itemFour = '<div class="slider__item item item_4"><img src="src/img/pets-scarlet.png" alt="pets Scarlett"><span class="slider__span">Scarlett</span><button class="slider__btn">Learn more</button></div>';
+const itemFive = '<div class="slider__item item item_5"><img src="src/img/pets-katrine.png" alt="pets Katrine"><span class="slider__span">Katrine</span><button class="slider__btn">Learn more</button></div>';
+const itemSix = '<div class="slider__item item item_6"><img src="src/img/pets-timmy.png" alt="pets Timmy"><span class="slider__span">Timmy</span><button class="slider__btn">Learn more</button></div>';
+const itemSeven = '<div class="slider__item item item_7"><img src="src/img/pets-Freddie.png" alt="pets Freddie"><span class="slider__span">Freddie</span><button class="slider__btn">Learn more</button></div>';
+const itemEight = '<div class="slider__item item item_8"><img src="src/img/pets-charly.png" alt="pets Charly"><span class="slider__span">Charly</span><button class="slider__btn">Learn more</button></div>';
+
+const arrPets = [itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix, itemSeven, itemEight];
+
+const sliderPets = document.querySelector(".slider__pets");
+const left = document.querySelector(".left");
+const leftAll = document.querySelector(".left_all");
+const right = document.querySelector(".right");
+const rightAll = document.querySelector(".right_all");
+const numberPage = document.querySelector(".number")
+
+
+let prevStack = []; 
+let nextStack = []; 
+let currentItems = [];
+
+
+// создания массива 
+let petsArr = [];
+for (let i = 0; i < 6; i++) {
+  petsArr = petsArr.concat(arrPets.sort(() => Math.random() - 0.5)); 
+}
+
+let totalPages = allTotalPages();
+let currPage = 1;
+
+
+// отображения страниц
+function renderPage(pageNumber) {
+  let visibleSlides = visibleISlide(); 
+  let startIndex = (pageNumber - 1) * visibleSlides;
+  let endIndex = startIndex + visibleSlides;
+  let itemsToRender = petsArr.slice(startIndex, endIndex);
+
+  renderSlider(itemsToRender);
+  updatePagBtn();
+  pageNumbers();
+}
+
+// обновления страницы 
+function pageNumbers() {
+  numberPage.querySelector(".span__pets").textContent = currPage;
+}
+
+// состояние кнопок
+function updatePagBtn() {
+  if (currPage === 1) {
+    left.classList.add("disabled__btn__slider__pets");
+    leftAll.classList.add("disabled__btn__slider__pets");
+  } else {
+    left.classList.remove("disabled__btn__slider__pets");
+    leftAll.classList.remove("disabled__btn__slider__pets");
+  }
+
+  if (currPage === totalPages) {
+    right.classList.add("disabled__btn__slider__pets");
+    rightAll.classList.add("disabled__btn__slider__pets");
+  } else {
+    right.classList.remove("disabled__btn__slider__pets");
+    rightAll.classList.remove("disabled__btn__slider__pets");
+  }
+}
+
+// кнопки лево и право
+left.addEventListener("click", () => {
+  if (currPage > 1) {
+    currPage--;
+    renderPage(currPage);
+  }
+});
+
+right.addEventListener("click", () => {
+  if (currPage < totalPages) {
+    currPage++;
+    renderPage(currPage);
+  }
+});
+
+leftAll.addEventListener("click", () => {
+  currPage = 1;
+  renderPage(currPage);
+});
+
+rightAll.addEventListener("click", () => {
+  currPage = totalPages;
+  renderPage(currPage);
+});
+
+
+
+// рандомные карточки 
+function randomSlide() {
+  const visibleSlides = visibleISlide();
+  const itemsSlide = arrPets.filter(item => !currentItems.includes(item));
+  const randomItems = [];
+  while (randomItems.length < visibleSlides) {
+    const randomIndex = Math.floor(Math.random() * itemsSlide.length);
+    const randomItem = itemsSlide.splice(randomIndex, 1)[0];
+    randomItems.push(randomItem);
+  }
+  return randomItems;
+}
+
+//рендер карточек
+function renderSlider(items) {
+  sliderPets.innerHTML = ''; 
+  items.forEach(item => {
+    sliderPets.innerHTML += item;
+  });
+  openModalClick()
+}
+
+function getSlider() {
+  currentItems = randomSlide();
+  for (let i = 0; i < 3; i++) { 
+    const prevItems = randomSlide();
+    prevStack.push(prevItems);
+  }
+  renderSlider(currentItems);
+  openModalClick(); 
+}
+getSlider();
+
+
+// Функция для размера экрана
+window.addEventListener("resize", () => {
+  let newTotalPages = allTotalPages();
+  if (newTotalPages !== totalPages) {
+    totalPages = newTotalPages;
+    if (currPage > totalPages) {
+      currPage = totalPages;
+    }
+    renderPage(currPage);
+  }
+});
+
+
+// отображения карточек по разрешению
+function visibleISlide() {
+  const widthWindow = window.innerWidth;
+  if (widthWindow >= 1270) {
+    return 8; 
+  } else if (widthWindow >= 758) {
+    return 6;
+  } else {
+    return 3;
+  }
+}
+
+
+//для страниц 6/8/16
+function allTotalPages() {
+  const widthWindow = window.innerWidth;
+  if (widthWindow >= 1270) {
+    return 6; 
+  } else if (widthWindow >= 758) {
+    return 8;
+  } else {
+    return 16;
+  }
+}
+
+renderPage(currPage);
+
+
+
 // итемы
 
 //json 
@@ -140,37 +317,33 @@ function modalContent(index) {
 }
 
 
-item1?.addEventListener("click", () => {
-  localStorage.setItem('item', 1); 
-  modalContent(1);
-  });
-  item2?.addEventListener("click", () => {
-  modalContent(2);
-  localStorage.setItem('item', 2);  
-  });
-  item3?.addEventListener("click", () => {
-    localStorage.setItem('item', 3); 
-  modalContent(3);
-  });
-  item4?.addEventListener("click", () => {
-    localStorage.setItem('item', 4); 
-  modalContent(4);
-  });
-  item5?.addEventListener("click", () => {
-    localStorage.setItem('item', 5); 
-  modalContent(5);
-  });
-  item6?.addEventListener("click", () => {
-    localStorage.setItem('item', 6); 
-  modalContent(6);
-  });
-  item7?.addEventListener("click", () => {
-    localStorage.setItem('item', 7);  
-  modalContent(7);
-  });
-  item8?.addEventListener("click", () => {
-    localStorage.setItem('item', 8); 
-  modalContent(8);
-  });
+//открытия модалок в слайдере
+function openModalClick() {
+  const sliderItems = document.querySelectorAll(".slider__item");
 
-  
+  sliderItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      if (item.classList.contains("item_1")) {
+        modalContent(1); 
+      } else if (item.classList.contains("item_2")) {
+        modalContent(2); 
+      } else if (item.classList.contains("item_3")) {
+        modalContent(3);
+      } else if (item.classList.contains("item_4")) {
+        modalContent(4);
+      } else if (item.classList.contains("item_5")) {
+        modalContent(5);
+      } else if (item.classList.contains("item_6")) {
+        modalContent(6);
+      } else if (item.classList.contains("item_7")) {
+        modalContent(7);
+      } else if (item.classList.contains("item_8")) {
+        modalContent(8);
+      }
+      else {
+      }
+      modalWindow.classList.add("modal_active");
+      document.documentElement.style.overflow = 'hidden';
+    });
+  });
+}

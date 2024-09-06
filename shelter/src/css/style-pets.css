@@ -555,9 +555,9 @@ background-size: 100% 3px;
      .slider__pets{
         justify-content: center;
      }
-    .slider__item:nth-last-child(-n+2) { 
+    /* .slider__item:nth-last-child(-n+2) { 
       display: none;
-    }
+    } */
     .pets__content_box{
         gap: 14px;
         padding: 80px 25px 77px;
@@ -588,9 +588,9 @@ background-size: 100% 3px;
     .h3__pets{
         font-size: 25px;
     }
-    .slider__item:nth-last-child(-n+5) { 
+    /* .slider__item:nth-last-child(-n+5) { 
         display: none;
-      }
+      } */
  }
 
 
