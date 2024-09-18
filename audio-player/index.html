@@ -14,23 +14,17 @@
     <main class="main">
         <div class="main__container">
             <img class="back__img" id="background" >
-            <audio  id="audio" controls></audio>
+            <audio  id="audio"></audio>
             <div class="audio__player">
                 <img id="cover" >  
                 <div class="song__name"></div>
                 <div class="song__executor"></div>
-                <!-- <div class="progress__bar" id="song__length">
-                     <div class="progress"></div>
-                </div> -->
                 <input type="range" id="song__length" min="0" max="100" step="1" value="0">
                 <div class="currentTime">0:00</div>
                 <div class="durationTime">0:00</div>
                 <img id="prevSong" src="assets/svg/backward.png">
                 <img id="play__pause" class="play__pause" src="assets/svg/play.png" data-replace="assets/svg/pause.png">
                 <img id="nextSong" src="assets/svg/forward.png">
-                <!-- <div class="volume" id="volume__length">
-                    <div class="progress_volume"></div>
-               </div> -->
                <input type="range" class="volume" id="volume__length" min="0" max="1" step="0.01" value="1">
                <img class="icon_volume" src="./assets/svg/volume.png" alt="volume">
             </div>
