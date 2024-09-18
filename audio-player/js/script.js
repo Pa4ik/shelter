@@ -110,6 +110,7 @@ audio.addEventListener('timeupdate', () => {
 }
 nextBtn.addEventListener('click', nextSong)
 
+
 //прошлая песня
 function prevSong(){
     songIndex -= 1
