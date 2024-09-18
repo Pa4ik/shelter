@@ -26,6 +26,27 @@ function startSong(song) {
     nameSong.innerHTML = song
     songExecutor.innerHTML = artist[songIndex]
     audio.src = `assets/audio/${song}.mp3`
+
+
+    audio.addEventListener('loadedmetadata', () => {
+        const duration = audio.duration;
+        durationTime.innerHTML = formatTime(duration);
+        console.log(formatTime(duration));
+    });
+
+    audio.addEventListener('timeupdate', () => {
+        const currentTime = audio.currentTime;
+        currentTimes.innerHTML = formatTime(currentTime); 
+        console.log(formatTime(currentTime));
+    });
 }
 startSong(songs[songIndex])
 
+
+//формат времени 
+function formatTime(time) {
+    let minutes = Math.floor(time / 60);
+    let seconds = Math.floor(time % 60);
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
+  return `${minutes}:${seconds}`;
+}
