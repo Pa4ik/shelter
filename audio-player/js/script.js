@@ -50,3 +50,26 @@ function formatTime(time) {
     seconds = seconds < 10 ? `0${seconds}` : seconds;
   return `${minutes}:${seconds}`;
 }
+
+
+//стоп плей
+function playSong() {
+    audio.play()
+    player.classList.add('play')
+    playBtn.src = 'assets/svg/pause.png'
+}
+
+function stopSong() {
+    audio.pause()
+    player.classList.remove('play')
+    playBtn.src = 'assets/svg/play.png'
+}
+
+playBtn.addEventListener('click', () => {
+    const play = player.classList.contains('play')
+    if(play){
+        stopSong()
+    } else {
+        playSong()
+    }
+})
