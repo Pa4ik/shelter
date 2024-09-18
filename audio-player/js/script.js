@@ -82,3 +82,17 @@ volumeInput.addEventListener('input', function() {
     audio.volume = volumeInput.value; 
     console.log(`Volume: ${audio.volume}`);
   });
+
+
+//прогресс бар
+audio.addEventListener('loadedmetadata', () => {
+    songLength.max = audio.duration;
+});
+
+songLength.addEventListener('input', () => {
+    audio.currentTime = songLength.value;
+});
+
+audio.addEventListener('timeupdate', () => {
+    songLength.value = audio.currentTime;
+});
