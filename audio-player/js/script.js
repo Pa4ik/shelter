@@ -96,3 +96,30 @@ songLength.addEventListener('input', () => {
 audio.addEventListener('timeupdate', () => {
     songLength.value = audio.currentTime;
 });
+
+
+
+ // следущая песня
+ function nextSong(){
+    songIndex += 1;
+    if (songIndex > songs.length -1){
+        songIndex = 0
+    }
+    startSong(songs[songIndex])
+    playSong()
+}
+nextBtn.addEventListener('click', nextSong)
+
+//прошлая песня
+function prevSong(){
+    songIndex -= 1
+    if (songIndex < 0){
+        songIndex = songs.length-1
+    }
+    startSong(songs[songIndex])
+    playSong()
+}
+prevBtn.addEventListener('click', prevSong)
+  
+
+audio.addEventListener('ended', nextSong)
