@@ -73,3 +73,12 @@ playBtn.addEventListener('click', () => {
         playSong()
     }
 })
+
+
+// громкость
+audio.volume = volumeInput.value;
+
+volumeInput.addEventListener('input', function() {
+    audio.volume = volumeInput.value; 
+    console.log(`Volume: ${audio.volume}`);
+  });
