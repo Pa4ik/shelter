@@ -55,7 +55,7 @@ const displayPhotos = () => {
         container.appendChild(photoByText);
         container.appendChild(photographerName);
         container.appendChild(instagramLink);
-        
+         
         img.appendChild(container);
     });
 };
