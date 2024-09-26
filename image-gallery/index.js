@@ -61,5 +61,20 @@ const displayPhotos = () => {
 };
 
 
+// Функции для инпута
+document.querySelector("#input").addEventListener("keydown", (event) => {
+    if (event.key == "Enter")
+    fetchPhotos();
+  });
+  
+  document.querySelector("#search").addEventListener("click", () => {
+    fetchPhotos();
+  });
+
+
+  document.getElementById("close").onclick = function(e) {
+    document.getElementById("input").value = "";
+  }
+
 
 fetchPhotos();
