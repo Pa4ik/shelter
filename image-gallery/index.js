@@ -9,7 +9,7 @@ let state = [];
 
 // Функция для получения фотографий
 const fetchPhotos = async (query = 'nature') => {
-    const url = `https://api.unsplash.com/photos/random?client_id=${ACCESS_KEY}&count=30&query=${encodeURIComponent(query)}`;
+    const url = `https://api.unsplash.com/photos/random?client_id=${ACCESS_KEY}&count=30&query=`+input.value;
     const response = await fetch(url);
     const data = await response.json();
     
@@ -55,7 +55,7 @@ const displayPhotos = () => {
         container.appendChild(photoByText);
         container.appendChild(photographerName);
         container.appendChild(instagramLink);
-
+        
         img.appendChild(container);
     });
 };

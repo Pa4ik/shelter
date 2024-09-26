@@ -139,14 +139,12 @@
   }
 }
 
-
 .img{
     width: 380px;
     height: 220px;
     background-position: center;
     background-size: cover;
     margin-bottom: 5px;
-    cursor: pointer;
   }
 
   .photo_by{
@@ -162,6 +160,3 @@
   .inst_svg{
     width: 18px;
   }
-
-
-
