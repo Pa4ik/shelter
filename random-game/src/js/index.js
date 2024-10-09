@@ -148,3 +148,17 @@ function checkLetter(letter) {
             wordGame.innerHTML = `Слово: ${currentWord}`;
         }
     }
+
+
+    const modal = document.getElementById("modals")
+
+
+    function updateImgAndIncorrect () {
+        incorrect.innerHTML =`Неверные буквы ${incorrectLetter}/6`
+        document.querySelector('.gallows').src = "./src/gallows-img/gallows-" + incorrectLetter + ".png";
+        if ( incorrectLetter === maxIncorrectLetter ){
+            modal.classList.add("menu-active");
+            lossWin.innerHTML = `Ты проиграл`
+            wordGame.innerHTML = `Слово: ${currentWord}`
+        } 
+    }
