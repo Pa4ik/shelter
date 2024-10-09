@@ -83,3 +83,50 @@ function generateBtn() {
         document.getElementById('keyboard').innerHTML = buttonsHTML;
       }
 generateBtn()
+
+
+const keyboard = document.getElementById('keyboard');
+const worldText = document.getElementById('world__text');
+const incorrect = document.getElementById('incorrect');
+
+
+keyboard.addEventListener('click', clickKey);
+document.addEventListener('keydown', pressKey);
+
+
+let guessedLetters = [];
+let incorrectLetter = 0;
+const maxIncorrectLetter = 6;
+
+
+function clickKey(event) {
+    const key = event.target.innerText;
+    if (key) {
+        checkLetter(key);
+        event.target.disabled = true;
+    }
+}
+
+
+function pressKey(event) {
+    const key = event.key.toUpperCase();
+    if (/^[А-Я]$/.test(key)) {
+        const button = document.querySelector(`.key[data-key='${key}']`);
+        if (button) {
+           checkLetter(key);
+           button.disabled = true;
+        }
+    }
+}
+
+
+function checkLetter(letter) {
+    if (!guessedLetters.includes(letter)) {
+        guessedLetters.push(letter);
+        if (!currentWord.includes(letter)) {
+            incorrectLetter++;
+            updateImgAndIncorrect ()
+        }
+        updateWord();
+    } 
+    }
