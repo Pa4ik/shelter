@@ -66,4 +66,20 @@ body.innerHTML = `
     </main>
    `
 
-   
+   const lossWin = document.getElementById("win__loss");
+   const wordGame = document.getElementById("word")
+   const btnReset = document.getElementById("reset")
+
+  
+function generateBtn() {
+    let buttonsHTML = 'ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁ'.split('').map(letter =>
+          `<button
+              class='key'
+              data-key='${letter}'
+            >
+              ` + letter + `
+            </button>
+          `).join('');
+        document.getElementById('keyboard').innerHTML = buttonsHTML;
+      }
+generateBtn()
