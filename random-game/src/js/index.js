@@ -130,3 +130,21 @@ function checkLetter(letter) {
         updateWord();
     } 
     }
+
+
+    function updateWord() {
+        let displayText = '';
+        for (const char of currentWord) {
+            if (guessedLetters.includes(char)) {
+                displayText += char;
+            } else {
+                displayText += '_';
+            }
+        }
+        worldText.innerHTML = `Слово: ${displayText}`;
+        if (!displayText.includes('_')) {
+            modal.classList.add("menu-active");
+            lossWin.innerHTML = `Ты выиграл!`;
+            wordGame.innerHTML = `Слово: ${currentWord}`;
+        }
+    }
