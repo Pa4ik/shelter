@@ -162,3 +162,46 @@ function checkLetter(letter) {
             wordGame.innerHTML = `Слово: ${currentWord}`
         } 
     }
+
+
+    btnReset.addEventListener('click', resetGame);
+
+    function resetGame() {
+        guessedLetters = [];
+        incorrectLetter = 0;
+        updateImgAndIncorrect();
+ 
+        currentWordIndex = Math.floor(Math.random() * wordsAndQuest.length);
+        currentWord = wordsAndQuest[currentWordIndex].word.toUpperCase();
+        currentQuest = wordsAndQuest[currentWordIndex].Quest;
+
+        console.log(currentWord)
+
+        worldText.innerHTML = `Слово: ${hideWord(currentWord)}`;
+        document.getElementById('quest__text').textContent = `Вопрос: ${currentQuest}`;
+
+     
+        const keyBtn = document.querySelectorAll('.key');
+        keyBtn.forEach(button => {
+            button.disabled = false;
+        });
+
+        modal.classList.remove("menu-active");
+        lossWin.innerHTML = '';
+        wordGame.innerHTML = '';
+    }
+
+
+let currentWordIndex = Math.floor(Math.random() * wordsAndQuest.length);
+let currentWord = wordsAndQuest[currentWordIndex].word.toUpperCase();
+let currentQuest = wordsAndQuest[currentWordIndex].Quest;
+console.log(currentWord)
+
+
+worldText.innerHTML = `Слово: ${hideWord(currentWord)}`;
+document.getElementById('quest__text').textContent = `Вопрос: ${currentQuest}`;
+
+
+function hideWord(word) {
+ return word.replace(/./g, '_');
+}
