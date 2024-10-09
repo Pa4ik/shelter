@@ -225,12 +225,14 @@ let winGame = function() {
     audio.src = 'src/audio/win.mp3';
     audio.play()
     audio.volume = 0.3;
+    saveResult(true, currentWord);
   }
 
   let lossGame = function() {
     audio.src = 'src/audio/gg.mp3';
     audio.play()
     audio.volume = 0.3;
+    saveResult(false, currentWord);
   } 
 
 
@@ -239,3 +241,28 @@ let winGame = function() {
     audio.play()
     audio.volume = 0.3;
   } 
+
+
+  
+  function getResults() {
+    const results = localStorage.getItem('gameResults');
+    return results ? JSON.parse(results) : [];
+}
+
+  function saveResult(isWin, word) {
+    const results = getResults();
+
+    const newResult = {
+        isWin: isWin ? 'Победа' : 'Поражение',
+        word: word,
+        date: new Date().toLocaleString()
+    };
+
+    results.unshift(newResult);
+
+    if (results.length > 10) {
+        results.pop();
+    }
+
+    localStorage.setItem('gameResults', JSON.stringify(results));
+}
