@@ -40,6 +40,7 @@ const body = document.getElementById('body');
 body.innerHTML = `
     <header class="header">
         <h1 class="h1">Hangman</h1>
+        <audio  id="audio"></audio>
     </header>
     <main class="main">
         <div class="gallows__block">
@@ -64,6 +65,15 @@ body.innerHTML = `
             </div>
         </div> 
     </main>
+     <footer class="footer">
+        <div class="footer__div">
+            <p class="">2024</p>
+             <a class="link svg__size" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+                <img class="svg__size" src="src/img/rss-logo.svg" alt="logo__school">
+            </a>
+            <a class="link" href="https://github.com/Pa4ik" target="_blank"><p>Maxim</p></a>
+        </div>
+    </footer>  
    `
 
    const lossWin = document.getElementById("win__loss");
@@ -146,6 +156,7 @@ function checkLetter(letter) {
             modal.classList.add("menu-active");
             lossWin.innerHTML = `Ты выиграл!`;
             wordGame.innerHTML = `Слово: ${currentWord}`;
+            winGame()
         }
     }
 
@@ -156,10 +167,12 @@ function checkLetter(letter) {
     function updateImgAndIncorrect () {
         incorrect.innerHTML =`Неверные буквы ${incorrectLetter}/6`
         document.querySelector('.gallows').src = "./src/gallows-img/gallows-" + incorrectLetter + ".png";
+        upImg()
         if ( incorrectLetter === maxIncorrectLetter ){
             modal.classList.add("menu-active");
             lossWin.innerHTML = `Ты проиграл`
             wordGame.innerHTML = `Слово: ${currentWord}`
+            lossGame() 
         } 
     }
 
@@ -205,3 +218,24 @@ document.getElementById('quest__text').textContent = `Вопрос: ${currentQue
 function hideWord(word) {
  return word.replace(/./g, '_');
 }
+
+const audio = document.getElementById('audio');
+
+let winGame = function() {
+    audio.src = 'src/audio/win.mp3';
+    audio.play()
+    audio.volume = 0.3;
+  }
+
+  let lossGame = function() {
+    audio.src = 'src/audio/gg.mp3';
+    audio.play()
+    audio.volume = 0.3;
+  } 
+
+
+  let upImg = function() {
+    audio.src = 'src/audio/up.mp3';
+    audio.play()
+    audio.volume = 0.3;
+  } 

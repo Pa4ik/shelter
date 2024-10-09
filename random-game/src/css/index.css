@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: flex-start;
   padding: 25px;
+  height: 12vh;
 }
 
 .main{
@@ -28,6 +29,7 @@ body {
   gap:50px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 80vh;
 }
 
 .gallows__block{
@@ -141,4 +143,34 @@ body {
   transition: opacity 0.5s;
   transform: none;
   overflow: hidden;
+}
+
+/* FOTTER */
+
+.footer{
+    border-top: blueviolet 4px solid;
+    background-color: black;
+}
+
+.footer__div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover{
+    color: blueviolet;
+}
+
+.svg__size{
+  width: 65px;
 }
